@@ -1,0 +1,11 @@
+price=30000.00, title=SDE-Bootcamp, enrolled=false, estimated_time=30
+sde_bootcamp
+Data Type Error
+No entry found for sde_kickstart
+sde_bootcamp
+price=4000.00, title=SDE-Kickstart, enrolled=true, estimated_time=8
+sde_bootcamp, sde_kickstart
+No entry found for sde_bootcamp
+sde_kickstart
+sde_bootcamp
+sde_bootcamp, sde_kickstart
