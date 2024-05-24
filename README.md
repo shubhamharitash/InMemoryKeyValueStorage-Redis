@@ -9,6 +9,7 @@ Problem Statement
 Design an In-Memory Key-Value Store like Redis.
 
 Requirements
+
 The key-value store will be in-memory and does not require access to the file system.
 The key will always be a string.
 The value would be an object/map. The object would have attributes and corresponding values.
@@ -29,9 +30,11 @@ Input/Output Format
 The code should strictly follow the input/output format and will be tested with provided test cases.
 
 Input Format
+
 Multiple lines with each line containing a command.
 
 Possible commands:
+
 
 get <key>
 put <key> <attributeKey1> <attributeValue1> <attributeKey2> <attributeValue2>....
@@ -43,7 +46,9 @@ Stop taking the input when you encounter the word exit.
 
 Assume that attribute keys and values would not have space in between.
 
+
 Output Format
+
 Print output based on the specific commands as mentioned below.
 
 get
@@ -71,7 +76,9 @@ key1,key2,key3,key4
 Print in sorted order
 
 Example
+
 Sample Input
+
 put sde_bootcamp title SDE-Bootcamp price 30000.00 enrolled false estimated_time 30
 get sde_bootcamp
 keys
@@ -87,7 +94,9 @@ keys
 put sde_bootcamp title SDE-Bootcamp price 30000.00 enrolled true estimated_time 30
 search price 30000.00
 search enrolled true
+
 Expected Output
+
 title: SDE-Bootcamp, price: 30000.00, enrolled: false, estimated_time: 30
 sde_bootcamp
 Data Type Error
@@ -99,7 +108,9 @@ No entry found for sde_bootcamp
 sde_kickstart
 sde_bootcamp
 sde_bootcamp,sde_kickstart
+
 Expectations
+
 Make sure that you have a working and demonstrable code
 Make sure that the code is functionally correct
 Code should be modular and readable
