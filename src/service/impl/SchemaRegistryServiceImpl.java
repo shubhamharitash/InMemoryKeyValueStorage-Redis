@@ -24,9 +24,6 @@ public class SchemaRegistryServiceImpl implements SchemaRegistryService {
 
     @Override
     public boolean validateSchema(List<Pair<String, String>> listOfAttributePairs) {
-        listOfAttributePairs.forEach(pair->
-                schemaRegistryRepository.get(pair.getKey()).equals(DataTypeChecker.determineType(pair.getValue()))
-        );
 
       Object isInvalid= listOfAttributePairs.stream().filter(pair->
                 !schemaRegistryRepository.get(pair.getKey()).equals(DataTypeChecker.determineType(pair.getValue()))
